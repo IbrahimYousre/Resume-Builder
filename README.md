@@ -14,4 +14,4 @@ Feel free to review the source code, fork the repository, and send pull requests
 
 [Resume.pdf](https://github.com/IbrahimYousre/Resume-Builder/blob/master/Screenshoots/resume.pdf)
 
-![](https://github.com/IbrahimYousre/Resume-Builder/blob/master/Screenshoots/your%20resume.png)
+<img src="https://github.com/IbrahimYousre/Resume-Builder/blob/master/Screenshoots/your%20resume.png" width="33%">
