@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_personal_info"
+            android:checked="true"
+            android:title="@string/action_personal_info" />
+        <item
+            android:id="@+id/action_essentials"
+            android:checked="false"
+            android:title="@string/action_essentials" />
+        <item
+            android:id="@+id/action_projects"
+            android:checked="false"
+            android:title="@string/action_projects" />
+        <item
+            android:id="@+id/action_education"
+            android:checked="false"
+            android:title="@string/action_education" />
+        <item
+            android:id="@+id/action_experience"
+            android:checked="false"
+            android:title="@string/action_experience" />
+        <!--
+        <item
+            android:id="@+id/action_awards"
+            android:checked="false"
+            android:title="@string/action_awards" />
+            -->
+        <item
+            android:id="@+id/action_preview"
+            android:checked="false"
+            android:title="@string/action_preview" />
+    </group>
+</menu>

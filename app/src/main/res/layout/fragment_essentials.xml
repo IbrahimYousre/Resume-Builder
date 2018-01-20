@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.ibrahimyousre.resumebuilder.fragments.EssentialsFragment">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_input_margin_bottom">
+
+        <EditText
+            android:id="@+id/input_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skills" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_input_margin_bottom">
+
+        <EditText
+            android:id="@+id/input_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Languages" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

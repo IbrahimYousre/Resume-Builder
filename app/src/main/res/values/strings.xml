@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Resume Builder</string>
+
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_closed">Closed Drawer</string>
+    <string name="steps">Steps</string>
+
+    <string name="action_personal_info">Personal Info</string>
+    <string name="action_essentials">Essentials</string>
+    <string name="action_projects">Projects</string>
+    <string name="action_education">Schools</string>
+    <string name="action_experience">Experience</string>
+    <string name="action_awards">Awards</string>
+    <string name="action_preview">Preview</string>
+
+    <string name="action_add">Add</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_print">Print</string>
+
+</resources>
