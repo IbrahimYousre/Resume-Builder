@@ -3,13 +3,13 @@ package com.ibrahimyousre.resumebuilder.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.view.View;
 
 import com.ibrahimyousre.resumebuilder.EditActivity;
 import com.ibrahimyousre.resumebuilder.adapters.ExperienceAdapter;
 import com.ibrahimyousre.resumebuilder.adapters.ResumeEventAdapter;
 import com.ibrahimyousre.resumebuilder.datamodel.Experience;
 import com.ibrahimyousre.resumebuilder.datamodel.Resume;
-import com.ibrahimyousre.resumebuilder.datamodel.ResumeEvent;
 import com.ibrahimyousre.resumebuilder.helper.ResumeEventFragment;
 import com.ibrahimyousre.resumebuilder.helper.ResumeFragment;
 
@@ -39,8 +39,9 @@ public class ExperienceFragment extends ResumeEventFragment<Experience> {
     }
 
     @Override
-    protected ResumeEventAdapter<Experience> getAdapter() {
-        return new ExperienceAdapter(getResume().experience, this);
+    protected ResumeEventAdapter<Experience> getAdapter(View emptyView) {
+        return new ExperienceAdapter(getResume().experience, this)
+                .setEmptyView(emptyView);
     }
 
     @Override

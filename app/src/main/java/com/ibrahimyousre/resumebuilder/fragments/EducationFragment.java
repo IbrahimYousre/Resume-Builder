@@ -3,6 +3,7 @@ package com.ibrahimyousre.resumebuilder.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.view.View;
 
 import com.ibrahimyousre.resumebuilder.EditActivity;
 import com.ibrahimyousre.resumebuilder.adapters.ResumeEventAdapter;
@@ -38,8 +39,9 @@ public class EducationFragment extends ResumeEventFragment<School> {
     }
 
     @Override
-    protected ResumeEventAdapter<School> getAdapter() {
-        return new SchoolsAdapter(getResume().schools, this);
+    protected ResumeEventAdapter<School> getAdapter(View emptyView) {
+        return new SchoolsAdapter(getResume().schools, this)
+                .setEmptyView(emptyView);
     }
 
     @Override

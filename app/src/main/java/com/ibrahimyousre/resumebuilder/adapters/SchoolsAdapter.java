@@ -1,6 +1,7 @@
 package com.ibrahimyousre.resumebuilder.adapters;
 
 import android.support.annotation.NonNull;
+import android.view.View;
 
 import com.ibrahimyousre.resumebuilder.datamodel.School;
 

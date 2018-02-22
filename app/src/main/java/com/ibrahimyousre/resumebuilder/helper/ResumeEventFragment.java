@@ -29,7 +29,7 @@ abstract public class ResumeEventFragment<T extends ResumeEvent> extends ResumeF
 
     protected abstract void addClicked();
 
-    protected abstract ResumeEventAdapter<T> getAdapter();
+    protected abstract ResumeEventAdapter<T> getAdapter(View emptyView);
 
     protected abstract void delete(int pos);
 
@@ -44,8 +44,9 @@ abstract public class ResumeEventFragment<T extends ResumeEvent> extends ResumeF
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.recycler_view, container, false);
         recyclerView = view.findViewById(R.id.recycler_view);
+        View emptyView = view.findViewById(android.R.id.empty);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(getAdapter());
+        recyclerView.setAdapter(getAdapter(emptyView));
         new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,
                 ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
             @Override

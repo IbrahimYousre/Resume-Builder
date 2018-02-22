@@ -44,6 +44,21 @@ abstract public class ResumeEventAdapter<T extends ResumeEvent>
 
     }
 
+    public ResumeEventAdapter<T> setEmptyView(final View emptyView) {
+        this.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
+            @Override
+            public void onChanged() {
+                super.onChanged();
+                if (getItemCount() == 0) {
+                    emptyView.setVisibility(View.VISIBLE);
+                } else {
+                    emptyView.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        return this;
+    }
+
     @Override
     public void onBindViewHolder(ResumeEventAdapterViewHolder holder, int position) {
         ResumeEvent event = list.get(position);
