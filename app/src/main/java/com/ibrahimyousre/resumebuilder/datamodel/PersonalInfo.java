@@ -1,12 +1,15 @@
 package com.ibrahimyousre.resumebuilder.datamodel;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.io.Serializable;
 
 /**
  * Created by ibrahim on 1/18/18.
  */
 
-public class PersonalInfo implements Serializable {
+public class PersonalInfo implements Parcelable {
     private String name;
     private String jobTitle;
     private String addressLine1;
@@ -25,6 +28,42 @@ public class PersonalInfo implements Serializable {
         this.addressLine2 = addressLine2;
         this.phone = phone;
         this.email = email;
+    }
+
+    protected PersonalInfo(Parcel in) {
+        name = in.readString();
+        jobTitle = in.readString();
+        addressLine1 = in.readString();
+        addressLine2 = in.readString();
+        phone = in.readString();
+        email = in.readString();
+    }
+
+    public static final Creator<PersonalInfo> CREATOR = new Creator<PersonalInfo>() {
+        @Override
+        public PersonalInfo createFromParcel(Parcel in) {
+            return new PersonalInfo(in);
+        }
+
+        @Override
+        public PersonalInfo[] newArray(int size) {
+            return new PersonalInfo[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(jobTitle);
+        dest.writeString(addressLine1);
+        dest.writeString(addressLine2);
+        dest.writeString(phone);
+        dest.writeString(email);
     }
 
     public String getName() {

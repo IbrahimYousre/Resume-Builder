@@ -1,5 +1,7 @@
 package com.ibrahimyousre.resumebuilder.datamodel;
 
+import android.os.Parcel;
+
 /**
  * Created by ibrahim on 1/18/18.
  */
@@ -7,6 +9,18 @@ package com.ibrahimyousre.resumebuilder.datamodel;
 public class School extends ResumeEvent {
     public School() {
     }
+
+    public static final Creator<School> CREATOR = new Creator<School>() {
+        @Override
+        public School createFromParcel(Parcel in) {
+            return new School(new ResumeEvent(in));
+        }
+
+        @Override
+        public School[] newArray(int size) {
+            return new School[size];
+        }
+    };
 
     public School(ResumeEvent event) {
         super(event);
