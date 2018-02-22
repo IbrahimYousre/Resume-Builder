@@ -15,6 +15,9 @@ public class ResumeEvent implements Serializable {
     private Date fromDate;
     private Date toDate;
 
+    public ResumeEvent() {
+    }
+
     public ResumeEvent(String title, String detail, String subtitle, String description, Date fromDate, Date toDate) {
         this.title = title;
         this.detail = detail;
@@ -25,12 +28,7 @@ public class ResumeEvent implements Serializable {
     }
 
     public ResumeEvent(ResumeEvent resumeEvent) {
-        this.title = resumeEvent.title;
-        this.detail = resumeEvent.detail;
-        this.subtitle = resumeEvent.subtitle;
-        this.description = resumeEvent.description;
-        this.fromDate = resumeEvent.fromDate;
-        this.toDate = resumeEvent.toDate;
+        cloneThis(resumeEvent);
     }
 
     public void cloneThis(ResumeEvent resumeEvent) {

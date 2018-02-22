@@ -6,14 +6,6 @@ package com.ibrahimyousre.resumebuilder.datamodel;
 
 public class School extends ResumeEvent {
     public School() {
-        super(
-                "School Name",
-                "Location",
-                "Degree",
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
-                null,
-                null
-        );
     }
 
     public School(ResumeEvent event) {

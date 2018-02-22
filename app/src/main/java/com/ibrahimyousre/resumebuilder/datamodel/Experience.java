@@ -6,14 +6,6 @@ package com.ibrahimyousre.resumebuilder.datamodel;
 
 public class Experience extends ResumeEvent {
     public Experience() {
-        super(
-                "Company Name",
-                "Location",
-                "Job Title",
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
-                null,
-                null
-        );
     }
 
     public Experience(ResumeEvent event) {

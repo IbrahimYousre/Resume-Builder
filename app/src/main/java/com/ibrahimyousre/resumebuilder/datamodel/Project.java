@@ -7,13 +7,6 @@ package com.ibrahimyousre.resumebuilder.datamodel;
 public class Project extends ResumeEvent {
 
     public Project() {
-        super(
-                "Project Name",
-                "Detail",
-                "",
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                null,
-                null);
     }
 
     public Project(ResumeEvent event) {

@@ -15,13 +15,7 @@ public class PersonalInfo implements Serializable {
     private String email;
 
     public PersonalInfo() {
-        this(
-                "Jone Doe",
-                "Android Developer",
-                "123 Your Street",
-                "Your City, ST 12345",
-                "(123) 456-7890",
-                "no_reply@example.com");
+        this("", "", "", "", "", "");
     }
 
     public PersonalInfo(String name, String jobTitle, String addressLine1, String addressLine2, String phone, String email) {

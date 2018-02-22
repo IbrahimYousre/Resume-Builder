@@ -24,14 +24,10 @@ public class Resume implements Serializable {
         Resume resume = new Resume();
         resume.personalInfo = new PersonalInfo();
         resume.schools = new ArrayList<>();
-        resume.schools.add(new School());
-        resume.schools.add(new School());
         resume.experience = new ArrayList<>();
-        resume.experience.add(new Experience());
         resume.projects = new ArrayList<>();
-        resume.projects.add(new Project());
-        resume.languages = "Lorem ipsum, Dolor sit amet, Consectetuer";
-        resume.skills = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac interdum nisi. Sed in consequat mi. Sed pulvinar lacinia felis eu finibus.";
+        resume.languages = "";
+        resume.skills = "";
         return resume;
     }
 }
