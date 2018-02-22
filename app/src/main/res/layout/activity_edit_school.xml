@@ -1,62 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical"
     tools:context="com.ibrahimyousre.resumebuilder.EditActivity">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_layout_title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/text_input_margin_bottom">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <EditText
-            android:id="@+id/input_title"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="School Name" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginBottom="@dimen/text_input_margin_bottom">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_layout_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/text_input_margin_bottom">
+            <EditText
+                android:id="@+id/input_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="School Name"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/input_detail"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Location" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginBottom="@dimen/text_input_margin_bottom">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_layout_subtitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/text_input_margin_bottom">
+            <EditText
+                android:id="@+id/input_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/input_subtitle"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Degree" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginBottom="@dimen/text_input_margin_bottom">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_layout_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/text_input_margin_bottom">
+            <EditText
+                android:id="@+id/input_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Degree"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/input_description"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Description" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginBottom="@dimen/text_input_margin_bottom">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/input_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="text|textCapSentences|textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</ScrollView>
