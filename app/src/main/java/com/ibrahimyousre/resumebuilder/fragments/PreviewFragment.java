@@ -49,6 +49,7 @@ public class PreviewFragment extends ResumeFragment {
         View view = inflater.inflate(R.layout.fragment_preview, container, false);
         webView = view.findViewById(R.id.webView);
         StringBuilder htmlContent = new StringBuilder();
+        Resume resume = getResume();
         PersonalInfo personalInfo = resume.personalInfo;
         htmlContent.append(String.format("<!DOCTYPE html>\n" +
                 "<html>\n" +

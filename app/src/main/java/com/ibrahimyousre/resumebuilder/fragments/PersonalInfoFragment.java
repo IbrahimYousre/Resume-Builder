@@ -14,7 +14,6 @@ import com.ibrahimyousre.resumebuilder.helper.ResumeFragment;
 import com.ibrahimyousre.resumebuilder.helper.TextChangeListener;
 
 public class PersonalInfoFragment extends ResumeFragment {
-    PersonalInfo personalInfo;
 
     public static ResumeFragment newInstance(Resume resume) {
         ResumeFragment fragment = new PersonalInfoFragment();
@@ -23,17 +22,13 @@ public class PersonalInfoFragment extends ResumeFragment {
     }
 
     @Override
-    public void setResume(Resume resume) {
-        super.setResume(resume);
-        personalInfo = resume.personalInfo;
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root =
                 inflater.inflate(R.layout.fragment_personal_info, container, false);
-        ;
+
+        final PersonalInfo personalInfo = getResume().personalInfo;
+
         EditText nameEditText = root.findViewById(R.id.input_name);
         nameEditText.setText(personalInfo.getName());
         nameEditText.addTextChangedListener(new TextChangeListener() {

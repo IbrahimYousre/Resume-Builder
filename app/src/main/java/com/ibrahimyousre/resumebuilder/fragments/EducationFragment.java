@@ -21,13 +21,13 @@ public class EducationFragment extends ResumeEventFragment<School> {
 
     @Override
     protected void delete(int pos) {
-        resume.schools.remove(pos);
+        getResume().schools.remove(pos);
     }
 
     @Override
     public void onClick(int position) {
         Intent intent = EditActivity.getSchoolIntent(getContext());
-        EditActivity.setData(intent, position, resume.schools.get(position));
+        EditActivity.setData(intent, position, getResume().schools.get(position));
         startActivityForResult(intent, REQUEST_EDIT);
     }
 
@@ -39,18 +39,18 @@ public class EducationFragment extends ResumeEventFragment<School> {
 
     @Override
     protected ResumeEventAdapter<School> getAdapter() {
-        return new SchoolsAdapter(resume.schools, this);
+        return new SchoolsAdapter(getResume().schools, this);
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_ADD && resultCode == Activity.RESULT_OK) {
-            resume.schools.add(new School(EditActivity.getEvent(data)));
+            getResume().schools.add(new School(EditActivity.getEvent(data)));
             notifyDataChanged();
         }
         if (requestCode == REQUEST_EDIT && resultCode == Activity.RESULT_OK) {
             int id = data.getIntExtra(EditActivity.FIELD_ID, -1);
-            resume.schools.get(id).cloneThis(EditActivity.getEvent(data));
+            getResume().schools.get(id).cloneThis(EditActivity.getEvent(data));
             notifyDataChanged();
         }
         super.onActivityResult(requestCode, resultCode, data);

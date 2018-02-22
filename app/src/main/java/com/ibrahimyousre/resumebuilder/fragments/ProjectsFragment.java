@@ -22,13 +22,13 @@ public class ProjectsFragment extends ResumeEventFragment<Project> {
 
     @Override
     protected void delete(int pos) {
-        resume.projects.remove(pos);
+        getResume().projects.remove(pos);
     }
 
     @Override
     public void onClick(int position) {
         Intent intent = EditActivity.getProjectIntent(getContext());
-        EditActivity.setData(intent, position, resume.projects.get(position));
+        EditActivity.setData(intent, position, getResume().projects.get(position));
         startActivityForResult(intent, REQUEST_EDIT);
     }
 
@@ -40,18 +40,18 @@ public class ProjectsFragment extends ResumeEventFragment<Project> {
 
     @Override
     protected ResumeEventAdapter<Project> getAdapter() {
-        return new ProjectsAdapter(resume.projects, this);
+        return new ProjectsAdapter(getResume().projects, this);
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_ADD && resultCode == Activity.RESULT_OK) {
-            resume.projects.add(new Project(EditActivity.getEvent(data)));
+            getResume().projects.add(new Project(EditActivity.getEvent(data)));
             notifyDataChanged();
         }
         if (requestCode == REQUEST_EDIT && resultCode == Activity.RESULT_OK) {
             int id = data.getIntExtra(EditActivity.FIELD_ID, -1);
-            resume.projects.get(id).cloneThis(EditActivity.getEvent(data));
+            getResume().projects.get(id).cloneThis(EditActivity.getEvent(data));
             notifyDataChanged();
         }
         super.onActivityResult(requestCode, resultCode, data);

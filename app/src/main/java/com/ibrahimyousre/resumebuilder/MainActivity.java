@@ -2,6 +2,7 @@ package com.ibrahimyousre.resumebuilder;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Parcel;
 import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -27,6 +28,7 @@ import com.ibrahimyousre.resumebuilder.helper.ResumeFragment;
 public class MainActivity extends AppCompatActivity {
     private Resume resume;
     private String currentTitle;
+    private String STATE_CURRENT_TITLE = "current title";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +45,13 @@ public class MainActivity extends AppCompatActivity {
         else
             resume = gson.fromJson(json, Resume.class);
 
-        currentTitle = getString(R.string.action_personal_info);
+        if (savedInstanceState == null) {
+            openFragment(PersonalInfoFragment.newInstance(resume));
+            currentTitle = getString(R.string.action_personal_info);
+        } else
+            currentTitle = savedInstanceState.getString(STATE_CURRENT_TITLE);
+
         getSupportActionBar().setTitle(currentTitle);
-        openFragment(PersonalInfoFragment.newInstance(resume));
     }
 
     @Override
@@ -57,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
         String json = gson.toJson(resume);
         prefsEditor.putString("SerializableObject", json);
         prefsEditor.commit();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(STATE_CURRENT_TITLE, currentTitle);
     }
 
     private void setupLayout() {

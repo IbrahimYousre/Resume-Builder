@@ -22,13 +22,13 @@ public class ExperienceFragment extends ResumeEventFragment<Experience> {
 
     @Override
     protected void delete(int pos) {
-        resume.experience.remove(pos);
+        getResume().experience.remove(pos);
     }
 
     @Override
     public void onClick(int position) {
         Intent intent = EditActivity.getExperienceIntent(getContext());
-        EditActivity.setData(intent, position, resume.experience.get(position));
+        EditActivity.setData(intent, position, getResume().experience.get(position));
         startActivityForResult(intent, REQUEST_EDIT);
     }
 
@@ -40,18 +40,18 @@ public class ExperienceFragment extends ResumeEventFragment<Experience> {
 
     @Override
     protected ResumeEventAdapter<Experience> getAdapter() {
-        return new ExperienceAdapter(resume.experience, this);
+        return new ExperienceAdapter(getResume().experience, this);
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_ADD && resultCode == Activity.RESULT_OK) {
-            resume.experience.add(new Experience(EditActivity.getEvent(data)));
+            getResume().experience.add(new Experience(EditActivity.getEvent(data)));
             notifyDataChanged();
         }
         if (requestCode == REQUEST_EDIT && resultCode == Activity.RESULT_OK) {
             int id = data.getIntExtra(EditActivity.FIELD_ID, -1);
-            resume.experience.get(id).cloneThis(EditActivity.getEvent(data));
+            getResume().experience.get(id).cloneThis(EditActivity.getEvent(data));
             notifyDataChanged();
         }
         super.onActivityResult(requestCode, resultCode, data);

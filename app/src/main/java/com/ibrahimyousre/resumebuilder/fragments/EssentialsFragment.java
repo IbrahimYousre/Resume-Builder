@@ -22,9 +22,11 @@ public class EssentialsFragment extends ResumeFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View root =
                 inflater.inflate(R.layout.fragment_essentials, container, false);
+
+        final Resume resume = getResume();
+
         EditText skillsText = root.findViewById(R.id.input_skills);
         skillsText.setText(resume.skills);
         skillsText.addTextChangedListener(new TextChangeListener() {
