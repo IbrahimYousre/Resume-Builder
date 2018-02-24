@@ -1,10 +1,10 @@
 # Resume-Builder
 
-Welcome to my first official android app [Resume Builder on Play store](https://play.google.com/store/apps/details?id=com.ibrahimyousre.resumebuilder&rdid=com.ibrahimyousre.resumebuilder)
+Welcome to my first official android app [Resume Builder on Play store](https://play.google.com/store/apps/details?id=com.ibrahimyousre.resumebuilder&rdid=com.ibrahimyousre.resumebuilder), a simple way to generate a PDF résumé / CV (curriculum vitæ).
 
 Feel free to review the source code, fork the repository, and send pull requests
 
-# Screenshoots
+# Screenshots
 
 ![](https://github.com/IbrahimYousre/Resume-Builder/raw/master/Screenshoots/step1.png)  |  ![](https://github.com/IbrahimYousre/Resume-Builder/raw/master/Screenshoots/step2.png) | ![](https://github.com/IbrahimYousre/Resume-Builder/raw/master/Screenshoots/step3.png)
 :-------------------------:|:-------------------------:|:-------------------------:
