@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "187613208522",
+    "firebase_url": "https://resume-builder-befdd.firebaseio.com",
+    "project_id": "resume-builder-befdd",
+    "storage_bucket": "resume-builder-befdd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187613208522:android:5ea0a20f1c625787",
+        "android_client_info": {
+          "package_name": "com.ibrahimyousre.resumebuilder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187613208522-a1lhnuhutrpdciecemqiluvlv5aja2gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibrahimyousre.resumebuilder",
+            "certificate_hash": "c989130109cde56f68058cf63993bf402c7e1372"
+          }
+        },
+        {
+          "client_id": "187613208522-q13buvll14nmf3acv56huahva8ksue0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpPaQThS-F_FbuEXJf0Q9szto5fLlPjrM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187613208522-q13buvll14nmf3acv56huahva8ksue0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187613208522:android:747ad336208bb77e",
+        "android_client_info": {
+          "package_name": "com.ibrahimyousre.resumebuilder.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187613208522-v2k35vjkobrg17c5kdceejv7vm6741oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibrahimyousre.resumebuilder.debug",
+            "certificate_hash": "3a50f22f0e817230ead730d20048cdfafa4ad6ce"
+          }
+        },
+        {
+          "client_id": "187613208522-q13buvll14nmf3acv56huahva8ksue0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpPaQThS-F_FbuEXJf0Q9szto5fLlPjrM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187613208522-q13buvll14nmf3acv56huahva8ksue0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
