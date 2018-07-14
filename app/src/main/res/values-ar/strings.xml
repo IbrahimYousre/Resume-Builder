@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="content_description_open_drawer">فتح القائمة</string>
+    <string name="content_description_close_drawer">اغلاق القائمة</string>
+
+    <string name="steps">الخطوات</string>
+
+    <string name="navigation_personal_info">المعلومات الشخصة</string>
+    <string name="navigation_essentials">معلومات  أساسية</string>
+    <string name="navigation_projects">المشاريع</string>
+    <string name="navigation_education">التعليم</string>
+    <string name="navigation_experience">الخبرة</string>
+    <string name="navigation_awards" tools:keep="@string/navigation_awards">الجوائز</string>
+    <string name="navigation_preview">معاينة</string>
+
+    <string name="action_add">إضافة</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_print">طباعة</string>
+
+    <string name="hint_project_name">إسم المشروع</string>
+    <string name="hint_detail">وصف مختصر</string>
+    <string name="hint_subtitle">العنوان الفرعي</string>
+    <string name="hint_description">التفاصيل</string>
+    <string name="hint_company_name">إسم الشركة</string>
+    <string name="hint_location">الموقع</string>
+    <string name="hint_job_title">أسم الوظيفة</string>
+    <string name="hint_name">الإسم</string>
+    <string name="hint_address_line1">السطر الأول من العنوان</string>
+    <string name="hint_address_line2">السطر الثاني من العنوان</string>
+    <string name="hint_phone">رقم الهاتف</string>
+    <string name="hint_email">البريد الإلكتروني</string>
+    <string name="hint_school_name">إسم المدرسة</string>
+    <string name="hint_degree">الدرجة العلمية</string>
+    <string name="hint_skills">المهارات</string>
+    <string name="hint_languages">اللغات</string>
+
+    <string name="message_empty_list">هذه القائمة فارغة</string>
+</resources>
