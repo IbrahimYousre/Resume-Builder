@@ -4,23 +4,23 @@
         <item
             android:id="@+id/action_personal_info"
             android:checked="true"
-            android:title="@string/action_personal_info" />
+            android:title="@string/navigation_personal_info" />
         <item
             android:id="@+id/action_essentials"
             android:checked="false"
-            android:title="@string/action_essentials" />
+            android:title="@string/navigation_essentials" />
         <item
             android:id="@+id/action_projects"
             android:checked="false"
-            android:title="@string/action_projects" />
+            android:title="@string/navigation_projects" />
         <item
             android:id="@+id/action_education"
             android:checked="false"
-            android:title="@string/action_education" />
+            android:title="@string/navigation_education" />
         <item
             android:id="@+id/action_experience"
             android:checked="false"
-            android:title="@string/action_experience" />
+            android:title="@string/navigation_experience" />
         <!--
         <item
             android:id="@+id/action_awards"
@@ -30,6 +30,6 @@
         <item
             android:id="@+id/action_preview"
             android:checked="false"
-            android:title="@string/action_preview" />
+            android:title="@string/navigation_preview" />
     </group>
 </menu>

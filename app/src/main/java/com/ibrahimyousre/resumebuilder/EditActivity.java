@@ -11,9 +11,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.ibrahimyousre.resumebuilder.datamodel.Project;
 import com.ibrahimyousre.resumebuilder.datamodel.ResumeEvent;
-import com.ibrahimyousre.resumebuilder.datamodel.School;
 import com.ibrahimyousre.resumebuilder.helper.TextChangeListener;
 
 public class EditActivity extends AppCompatActivity {

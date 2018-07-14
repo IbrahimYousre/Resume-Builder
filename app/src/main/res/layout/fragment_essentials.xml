@@ -20,7 +20,7 @@
                 android:id="@+id/input_skills"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Skills"
+                android:hint="@string/hint_skills"
                 android:inputType="textCapWords"
                 android:nextFocusDown="@id/input_languages"
                 android:nextFocusForward="@id/input_languages">
@@ -39,7 +39,7 @@
                 android:id="@+id/input_languages"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Languages"
+                android:hint="@string/hint_languages"
                 android:inputType="textCapWords"
                 android:nextFocusUp="@id/input_skills" />
         </android.support.design.widget.TextInputLayout>

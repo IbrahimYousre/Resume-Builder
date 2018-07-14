@@ -20,7 +20,7 @@
                 android:id="@+id/input_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="@string/hint_name"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -34,7 +34,7 @@
                 android:id="@+id/input_job_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Job Title"
+                android:hint="@string/hint_job_title"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -48,7 +48,7 @@
                 android:id="@+id/input_address1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address line1"
+                android:hint="@string/hint_address_line1"
                 android:inputType="text" />
         </android.support.design.widget.TextInputLayout>
 
@@ -62,7 +62,7 @@
                 android:id="@+id/input_address2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address line2"
+                android:hint="@string/hint_address_line2"
                 android:inputType="text" />
         </android.support.design.widget.TextInputLayout>
 
@@ -76,7 +76,7 @@
                 android:id="@+id/input_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone"
+                android:hint="@string/hint_phone"
                 android:inputType="phone" />
         </android.support.design.widget.TextInputLayout>
 
@@ -90,7 +90,7 @@
                 android:id="@+id/input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/hint_email"
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>

@@ -1,21 +1,41 @@
 <resources>
-    <string name="app_name">Resume Builder</string>
+    <string name="app_name" translatable="false">Resume Builder</string>
 
-    <string name="drawer_open">Open Drawer</string>
-    <string name="drawer_closed">Closed Drawer</string>
+    <string name="content_description_open_drawer">Open Drawer</string>
+    <string name="content_description_close_drawer">Closed Drawer</string>
+
     <string name="steps">Steps</string>
 
-    <string name="action_personal_info">Personal Info</string>
-    <string name="action_essentials">Essentials</string>
-    <string name="action_projects">Projects</string>
-    <string name="action_education">Schools</string>
-    <string name="action_experience">Experience</string>
-    <string name="action_awards">Awards</string>
-    <string name="action_preview">Preview</string>
+    <string name="navigation_personal_info">Personal Info</string>
+    <string name="navigation_essentials">Essentials</string>
+    <string name="navigation_projects">Projects</string>
+    <string name="navigation_education">Schools</string>
+    <string name="navigation_experience">Experience</string>
+    <string name="navigation_awards">Awards</string>
+    <string name="navigation_preview">Preview</string>
 
     <string name="action_add">Add</string>
-
     <string name="action_save">Save</string>
     <string name="action_print">Print</string>
 
+    <string name="hint_project_name">Project Name</string>
+    <string name="hint_detail">Detail</string>
+    <string name="hint_subtitle">Subtitle</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_company_name">Company Name</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_job_title">Job Title</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address_line1">Address line1</string>
+    <string name="hint_address_line2">Address line2</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_school_name">School Name</string>
+    <string name="hint_degree">Degree</string>
+    <string name="hint_skills">Skills</string>
+    <string name="hint_languages">Languages</string>
+
+    <string name="message_empty_list">This is empty list</string>
+
+    <string name="symbol_separator" translatable="false">ㅡ</string>
 </resources>

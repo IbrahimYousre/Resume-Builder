@@ -7,6 +7,7 @@ import android.print.PrintAttributes;
 import android.print.PrintDocumentAdapter;
 import android.print.PrintJob;
 import android.print.PrintManager;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -44,7 +45,7 @@ public class PreviewFragment extends ResumeFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_preview, container, false);
         webView = view.findViewById(R.id.webView);
@@ -107,12 +108,12 @@ public class PreviewFragment extends ResumeFragment {
                     "                </tr>", resume.languages));
         }
         if (resume.schools.size() != 0) {
-            htmlContent.append(String.format("\n" +
+            htmlContent.append("\n" +
                     "                <tr class=\"c15\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
                     "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">Education</span></h1></td>\n" +
-                    "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n"));
+                    "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n");
             boolean first = true;
             for (School school : resume.schools) {
                 htmlContent.append(String.format("<h2 class=\"%s\" id=\"h.u3uy0857ab2n\"><span class=\"c5\">%s </span><span class=\"c30 c5\">/ %s</span></h2>\n" +
@@ -120,32 +121,32 @@ public class PreviewFragment extends ResumeFragment {
                         "                        <p class=\"c32\"><span class=\"c7\">%s</span></p>\n", first ? "c3" : "c14", school.getSchoolName(), school.getDegree(), school.getLocation(), school.getDescription()));
                 first = false;
             }
-            htmlContent.append(String.format("</td>\n" +
-                    "                </tr>"));
+            htmlContent.append("</td>\n" +
+                    "                </tr>");
         }
         if (resume.projects.size() != 0) {
-            htmlContent.append(String.format("\n" +
+            htmlContent.append("\n" +
                     "                <tr class=\"c15\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
                     "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">Projects</span></h1></td>\n" +
-                    "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n"));
+                    "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n");
             boolean first = true;
             for (Project project : resume.projects) {
                 htmlContent.append(String.format("<h2 class=\"%s\" id=\"h.u3uy0857ab2n\"><span class=\"c5\">%s </span><span class=\"c30 c5\">/ %s</span></h2>\n" +
                         "                        <p class=\"c32\"><span class=\"c7\">%s</span></p>\n", first ? "c3" : "c14", project.getName(), project.getDetail(), project.getDescription()));
                 first = false;
             }
-            htmlContent.append(String.format("</td>\n" +
-                    "                </tr>"));
+            htmlContent.append("</td>\n" +
+                    "                </tr>");
         }
         if (resume.experience.size() != 0) {
-            htmlContent.append(String.format("\n" +
+            htmlContent.append("\n" +
                     "                <tr class=\"c15\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
                     "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">Experience</span></h1></td>\n" +
-                    "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n"));
+                    "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n");
             boolean first = true;
             for (Experience experience : resume.experience) {
                 htmlContent.append(String.format("<h2 class=\"%s\" id=\"h.u3uy0857ab2n\"><span class=\"c5\">%s </span><span class=\"c30 c5\">/ %s</span></h2>\n" +
@@ -153,8 +154,8 @@ public class PreviewFragment extends ResumeFragment {
                         "                        <p class=\"c32\"><span class=\"c7\">%s</span></p>\n", first ? "c3" : "c14", experience.getCompany(), experience.getLocation(), experience.getJobTitle(), experience.getDescription()));
                 first = false;
             }
-            htmlContent.append(String.format("</td>\n" +
-                    "                </tr>"));
+            htmlContent.append("</td>\n" +
+                    "                </tr>");
         }
         htmlContent.append("</tbody>\n" +
                 "</table>\n" +

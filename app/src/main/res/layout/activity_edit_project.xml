@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context="com.ibrahimyousre.resumebuilder.EditActivity">
 
     <LinearLayout
@@ -23,7 +21,7 @@
                 android:id="@+id/input_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Project Name"
+                android:hint="@string/hint_project_name"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -37,7 +35,7 @@
                 android:id="@+id/input_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Detail"
+                android:hint="@string/hint_detail"
                 android:inputType="textCapSentences" />
         </android.support.design.widget.TextInputLayout>
 
@@ -52,7 +50,8 @@
                 android:id="@+id/input_subtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Subtitle" />
+                android:hint="@string/hint_subtitle"
+                android:inputType="text|textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -65,7 +64,7 @@
                 android:id="@+id/input_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Description"
+                android:hint="@string/hint_description"
                 android:inputType="text|textCapSentences|textMultiLine" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>

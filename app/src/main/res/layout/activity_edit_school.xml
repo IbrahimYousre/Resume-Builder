@@ -21,7 +21,7 @@
                 android:id="@+id/input_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="School Name"
+                android:hint="@string/hint_school_name"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -35,7 +35,7 @@
                 android:id="@+id/input_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Location"
+                android:hint="@string/hint_location"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -49,7 +49,7 @@
                 android:id="@+id/input_subtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Degree"
+                android:hint="@string/hint_degree"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -63,7 +63,7 @@
                 android:id="@+id/input_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Description"
+                android:hint="@string/hint_description"
                 android:inputType="text|textCapSentences|textMultiLine" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>

@@ -30,8 +30,9 @@ abstract public class ResumeEventAdapter<T extends ResumeEvent>
         void onClick(int position);
     }
 
+    @NonNull
     @Override
-    public ResumeEventAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ResumeEventAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_resume_event, parent, false);
         ResumeEventAdapterViewHolder viewHolder =
@@ -60,7 +61,7 @@ abstract public class ResumeEventAdapter<T extends ResumeEvent>
     }
 
     @Override
-    public void onBindViewHolder(ResumeEventAdapterViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ResumeEventAdapterViewHolder holder, int position) {
         ResumeEvent event = list.get(position);
         holder.itemView.setTag(position);
         holder.title.setText(event.getTitle());

@@ -1,6 +1,7 @@
 package com.ibrahimyousre.resumebuilder.helper;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -41,7 +42,7 @@ abstract public class ResumeEventFragment<T extends ResumeEvent> extends ResumeF
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.recycler_view, container, false);
         recyclerView = view.findViewById(R.id.recycler_view);
         View emptyView = view.findViewById(android.R.id.empty);

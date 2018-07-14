@@ -3,8 +3,6 @@ package com.ibrahimyousre.resumebuilder.datamodel;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.io.Serializable;
-
 /**
  * Created by ibrahim on 1/18/18.
  */

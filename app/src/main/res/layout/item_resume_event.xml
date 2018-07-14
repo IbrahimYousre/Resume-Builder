@@ -17,12 +17,12 @@
         tools:text="Title" />
 
     <TextView
-        android:id="@+id/seperator"
+        android:id="@+id/separator"
         style="@style/BoldTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:text="ㅡ"
+        android:text="@string/symbol_separator"
         app:layout_constraintBaseline_toBaselineOf="@+id/title"
         app:layout_constraintStart_toEndOf="@+id/title" />
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/title"
-        app:layout_constraintStart_toEndOf="@+id/seperator"
+        app:layout_constraintStart_toEndOf="@+id/separator"
         tools:text="Detail" />
 
     <TextView

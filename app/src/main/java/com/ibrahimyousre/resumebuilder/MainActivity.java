@@ -2,8 +2,6 @@ package com.ibrahimyousre.resumebuilder;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Parcel;
-import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             openFragment(PersonalInfoFragment.newInstance(resume));
-            currentTitle = getString(R.string.action_personal_info);
+            currentTitle = getString(R.string.navigation_personal_info);
         } else
             currentTitle = savedInstanceState.getString(STATE_CURRENT_TITLE);
 
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         Gson gson = new Gson();
         String json = gson.toJson(resume);
         prefsEditor.putString("SerializableObject", json);
-        prefsEditor.commit();
+        prefsEditor.apply();
     }
 
     @Override
@@ -91,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
                 this,
                 drawerLayout,
                 toolbar,
-                R.string.drawer_open,
-                R.string.drawer_closed) {
+                R.string.content_description_open_drawer,
+                R.string.content_description_close_drawer) {
             @Override
             public void onDrawerOpened(View drawerView) {
                 getSupportActionBar().setTitle(getString(R.string.steps));
