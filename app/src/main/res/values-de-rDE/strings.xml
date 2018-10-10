@@ -30,4 +30,5 @@
     <string name="hint_skills">Fähigkeiten</string>
     <string name="hint_languages">Sprachen</string>
     <string name="message_empty_list">Dies ist eine leere Liste</string>
+    <string name="education">Ausbildung</string>
 </resources>

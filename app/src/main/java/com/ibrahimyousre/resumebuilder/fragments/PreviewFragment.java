@@ -88,7 +88,7 @@ public class PreviewFragment extends ResumeFragment {
                     "                <tr class=\"c27\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
-                    "                        <h1 class=\"c9\" id=\"h.61e3cm1p1fln\"><span class=\"c16\">Skills</span></h1></td>\n" +
+                    "                        <h1 class=\"c9\" id=\"h.61e3cm1p1fln\"><span class=\"c16\">"+getString(R.string.hint_skills)+"</span></h1></td>\n" +
                     "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c2\"><span style=\"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 418.00px; height: 2.67px;\"><img alt=\"\" src=\"https://lh3.googleusercontent.com/n8bZfGajkthDbPpbjeiRJ4w7rNUmj1iFxdZKCHUOVnfH9FgHVt5EBo3vOYIIoE3augYQ_DCZJUzdlStyJ5RaldVrSG36sTE0CjIot2qaiJ3YRyr2i87bt9Y9d0ngdseS9PpG0HzM\" style=\"width: 418.00px; height: 2.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);\" title=\"horizontal line\"></span></p>\n" +
                     "                        <p class=\"c3\"><span class=\"c7\">%s</span></p>\n" +
@@ -100,7 +100,7 @@ public class PreviewFragment extends ResumeFragment {
                     "                <tr class=\"c27\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
-                    "                        <h1 class=\"c9\" id=\"h.61e3cm1p1fln\"><span class=\"c16\">Languages</span></h1></td>\n" +
+                    "                        <h1 class=\"c9\" id=\"h.61e3cm1p1fln\"><span class=\"c16\">"+getString(R.string.hint_languages)+"</span></h1></td>\n" +
                     "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c2\"><span style=\"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 418.00px; height: 2.67px;\"><img alt=\"\" src=\"https://lh3.googleusercontent.com/n8bZfGajkthDbPpbjeiRJ4w7rNUmj1iFxdZKCHUOVnfH9FgHVt5EBo3vOYIIoE3augYQ_DCZJUzdlStyJ5RaldVrSG36sTE0CjIot2qaiJ3YRyr2i87bt9Y9d0ngdseS9PpG0HzM\" style=\"width: 418.00px; height: 2.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);\" title=\"horizontal line\"></span></p>\n" +
                     "                        <p class=\"c3\"><span class=\"c7\">%s</span></p>\n" +
@@ -112,7 +112,7 @@ public class PreviewFragment extends ResumeFragment {
                     "                <tr class=\"c15\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
-                    "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">Education</span></h1></td>\n" +
+                    "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">"+getString(R.string.education)+"</span></h1></td>\n" +
                     "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n");
             boolean first = true;
             for (School school : resume.schools) {
@@ -129,7 +129,7 @@ public class PreviewFragment extends ResumeFragment {
                     "                <tr class=\"c15\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
-                    "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">Projects</span></h1></td>\n" +
+                    "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">"+getString(R.string.hint_project_name)+"</span></h1></td>\n" +
                     "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n");
             boolean first = true;
             for (Project project : resume.projects) {
@@ -145,7 +145,7 @@ public class PreviewFragment extends ResumeFragment {
                     "                <tr class=\"c15\">\n" +
                     "                    <td class=\"c26\" colspan=\"1\" rowspan=\"1\">\n" +
                     "                        <p class=\"c6\"><span class=\"c24\">ㅡ</span></p>\n" +
-                    "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">Experience</span></h1></td>\n" +
+                    "                        <h1 class=\"c9\" id=\"h.tk538brb1kdf\"><span class=\"c16\">"+getString(R.string.navigation_experience)+"</span></h1></td>\n" +
                     "                    <td class=\"c4\" colspan=\"1\" rowspan=\"1\">\n");
             boolean first = true;
             for (Experience experience : resume.experience) {
