@@ -38,4 +38,5 @@
     <string name="message_empty_list">This is empty list</string>
 
     <string name="symbol_separator" translatable="false">ㅡ</string>
+    <string name="education">Education</string>
 </resources>

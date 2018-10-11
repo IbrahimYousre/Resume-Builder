@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_description_open_drawer">Menü öffnen</string>
+    <string name="content_description_close_drawer">Menü schließen</string>
+    <string name="steps">Schritte</string>
+    <string name="navigation_personal_info">Persönliche Infos</string>
+    <string name="navigation_essentials">Wesentliches</string>
+    <string name="navigation_projects">Projekte</string>
+    <string name="navigation_education">Schule</string>
+    <string name="navigation_experience">Erfahrungen</string>
+    <string name="navigation_awards">Auszeichnungen</string>
+    <string name="navigation_preview">Vorschau</string>
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_print">Drucken</string>
+    <string name="hint_project_name">Projekt Name</string>
+    <string name="hint_detail">Detail</string>
+    <string name="hint_subtitle">Untertitle</string>
+    <string name="hint_description">Beschreibung</string>
+    <string name="hint_company_name">Firmenname</string>
+    <string name="hint_location">Ort</string>
+    <string name="hint_job_title">Stellenbezeichnung</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address_line1">Adresszeile 1</string>
+    <string name="hint_address_line2">Adresszeile 2</string>
+    <string name="hint_phone">Telefon</string>
+    <string name="hint_email">E-Mail</string>
+    <string name="hint_school_name">Name der Schule</string>
+    <string name="hint_degree">Abschluss</string>
+    <string name="hint_skills">Fähigkeiten</string>
+    <string name="hint_languages">Sprachen</string>
+    <string name="message_empty_list">Dies ist eine leere Liste</string>
+    <string name="education">Ausbildung</string>
+</resources>
